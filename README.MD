@@ -1,4 +1,4 @@
-# Ventistål Slideshow!
+# ScreenshotScript
 
 ScreenshotScript er et script som tar et skjermbilde en gang etter X antall minutter og kopierer skjermbildet til mapper som er lest inn via en fil.
 
