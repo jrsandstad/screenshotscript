@@ -1,0 +1,17 @@
+{
+  "name": "screenshotscript",
+  "version": "1.0.0",
+  "description": "Takes a screenshot of desktop every X minutes and copies the file to a list of directories",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ".\\app.js",
+    "cleanup": "taskkill /F /IM node.exe"
+  },
+  "author": "Jonas Roppestad Sandstad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "screenshot-desktop": "^1.12.7"
+  }
+}
