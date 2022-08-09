@@ -1,9 +1,13 @@
 const fs                = require('fs');
 const screenshot        = require('screenshot-desktop');
-//const serverDir         = "C:\\Users\\jonas.sandstad\\Documents\\VentiShow-main\\VentiShow-main\\Filer";
 const includeFile       = "/Users/jonas/Desktop/screenshotscript/Include.txt"; //Erstatt med Windows filepath
-const lokasjoner        = "/Users/jonas/Desktop/screenshotscript/Lokasjoner";  //Erstatt med Windows filepath
+const locations         = "/Users/jonas/Desktop/screenshotscript/Lokasjoner";  //Erstatt med Windows filepath
+const wait              = 5; //Waiting time before script runs again
 
-screenshot({ filename: 'Test.jpg' });
-screenshot({ filename: 'Test' + '2' + '.png'});
-console.log("Screenshot taken.");
+
+function takeScreenshot(){
+    screenshot({filename: 'Test.png'});
+    console.log("Screenshot taken.");
+}
+
+setInterval(takeScreenshot, 30000);
