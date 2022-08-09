@@ -1,9 +1,9 @@
-var   express           = require('express');
 const fs                = require('fs');
 const screenshot        = require('screenshot-desktop');
-const serverDir         = "C:\\Users\\jonas.sandstad\\Documents\\VentiShow-main\\VentiShow-main\\Filer";
-const includeFile       = "C:\Users\jonas.sandstad\Documents\ScreenshotScript\Include.txt";
+//const serverDir         = "C:\\Users\\jonas.sandstad\\Documents\\VentiShow-main\\VentiShow-main\\Filer";
+const includeFile       = "/Users/jonas/Desktop/screenshotscript/Include.txt"; //Erstatt med Windows filepath
+const lokasjoner        = "/Users/jonas/Desktop/screenshotscript/Lokasjoner";  //Erstatt med Windows filepath
 
-screenshot({ filename: 'C:\\Users\\jonas.sandstad\\Documents\\ScreenshotScript\\Test.jpg' });
-screenshot({ filename: 'C:\\Users\\jonas.sandstad\\Documents\\ScreenshotScript\\Test' + '2' + '.png'});
-console.log("Dette er en test!");
+screenshot({ filename: 'Test.jpg' });
+screenshot({ filename: 'Test' + '2' + '.png'});
+console.log("Screenshot taken.");
