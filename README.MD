@@ -5,12 +5,13 @@ ScreenshotScript er et script som tar et skjermbilde en gang etter X antall minu
 
 ### Avhengigheter
 
-* NodeJS
+* [NodeJS](https://nodejs.org/en/)
+* [screenshot-desktop](https://www.npmjs.com/package/screenshot-desktop)
 
 ### Installering
 For at programmet skal kunne kjøres så må det installeres en del ting på maskinen først.
 1. Installer [NodeJS](https://nodejs.org/en/). Når dette scriptet ble skrevet så ble det tatt i bruk versjon 18.7.
-2. For at screenshot-delen skal fungere så er man nødt til å installere følgende dependency: [screenshot-desktop](https://www.npmjs.com/package/screenshot-desktop). Dette gjøres ved å åpne en terminal/et kommandovindu og navigere til prosjektmappen og kjøre denne kommandoen.
+2. For at screenshot-delen skal fungere så er man nødt til å installere følgende dependency: [screenshot-desktop](https://www.npmjs.com/package/screenshot-desktop). Dette gjøres ved å åpne terminal/kommandovindu og navigere til prosjektmappen og kjøre denne kommandoen.
 ```
 npm install --silent
 ```
