@@ -19,7 +19,7 @@ npm install --silent
 
 
 ## Dokumentasjon
-Dokumentasjon for bruk av scriptet.
+
 
 
 ### Hvordan kjøre scriptet på maskinen
@@ -43,13 +43,16 @@ Da skal scriptet legge mappen til i listen over hvor den lagrer skjermbildet.
 Noen endringer krever at scriptet stoppes før endringene utføres. Dette er endringer som må utføres i selvet koden til scriptet. Dette kan være f.eks. hvor lenge scriptet skal vente før den tar neste skjermbilde eller hvor skjermbildene skal lagres.
 
 #### Endring av hvor ofte scriptet tar et skjermbilde
-
+Endre konstanten "const wait" i app.js til å være lik antall minutter du vil at intervallet skal være på. Som standard er den satt til å være lik 5, og vil scriptet vil derfor vente i 5 minutter før den tar neste skjermbilde.
+Eksempel: const wait = 5;
 
 #### Endring av hvilken mappe scriptet lagrer bildet i
-
+Endre konstanten "const folderPath" i app.js til å være lik den nye filstien hvor du vil lagre bildet som blir tatt. Husk dobbel backslash (\\) mellom de ulike mappene i filstien når du oppdaterer i scriptet. Husk at den nye filstien må bli plassert mellom anførselstegnene. 
+Eksempel: const folderPath = "C:\\Users\\brukernavn\\Documents\\ScreenshotScript\\Lokasjoner\\";
 
 #### Endring av filnavnet på skjermbildet
-Endre konstanten "const imageName" til å være lik "FILNAVN.png" eller "FILNAVN.jpg". Filformatet må være enten .png eller .jpg grunnet avhengigheten screenshot-desktop.
+Endre konstanten "const imageName" i app.js til å være lik "FILNAVN.png" eller "FILNAVN.jpg". Filformatet må være enten .png eller .jpg grunnet avhengigheten screenshot-desktop. Husk at det nye filnavnet må bli plassert mellom anførselstegnene.
+Eksempel: const imageName = "Zoho.png";
  
 
 #### Hvordan stoppe scriptet
