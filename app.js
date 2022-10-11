@@ -1,5 +1,4 @@
 //Dependencies
-const { TIMEOUT } = require('dns');
 const fs                = require('fs'); //Do not change this! Needed for the script to run.
 const screenshot        = require('screenshot-desktop'); //Do not change this! Needed for the script to run.
 
